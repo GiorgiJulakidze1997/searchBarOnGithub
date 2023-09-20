@@ -1,0 +1,44 @@
+.App {
+  /* width: 100%; */
+min-height: 100vh;
+/* display: flex; */
+/* align-items: center; */
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+}
+
+.app-dark-mode {
+  background-color: #141D2F;
+}
+
+.app-light-mode {
+  background-color: #F6F8FF;
+}
+
+.mediaScreen {
+  
+  width: 327px;
+  /* border: 1px solid red; */
+  
+}
+
+
+
+
+/* //////////////////////////////////////////////// */
+@media screen and (min-width: 767px) {
+ 
+  .mediaScreen {
+      margin-top: 100px;
+      width: 573px;
+  }
+}
+
+
+/* /////////////////////////////////////////////////////// */
+@media screen and (min-width: 1050px) {
+  .mediaScreen {
+      width: 730px;
+  }
+}

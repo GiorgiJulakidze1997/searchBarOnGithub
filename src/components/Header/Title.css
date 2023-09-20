@@ -1,0 +1,45 @@
+.titleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titleText {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
+.TitleLightMode {
+    color: #222731;
+}
+
+.TitleDarkMode {
+    color:#FFFFFF;
+}
+
+.darkAndLightChangeBox {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: right;
+    
+}
+
+.moonAndSunIconsBox {
+    display: flex;
+    gap: 10px;
+}
+
+.moonAndSunIconsBox:hover {
+    cursor: pointer;
+}

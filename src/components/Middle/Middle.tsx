@@ -27,6 +27,12 @@ export default function Middle(props: { activeLight: boolean; }) {
         }
     }
 
+    const handleKeyDown = (event: { key: string; }) => {
+        if (event.key === 'Enter') {
+            onSearch();
+        }
+    }
+
 
 
     return (
@@ -34,7 +40,7 @@ export default function Middle(props: { activeLight: boolean; }) {
             <div className={`searchBarBox ${props.activeLight ? 'light' : 'dark'}`}>
                 <div className="imgAndInputBox">
                     <img src={loop} alt='loop' />
-                    <input className={`input ${props.activeLight ? 'light' : 'dark'}`} type="text" placeholder="Search GitHub username…" value={userName} onChange={onChange} />
+                    <input className={`input ${props.activeLight ? 'light' : 'dark'}`} type="text" placeholder="Search GitHub username…" value={userName} onChange={onChange} onKeyDown={handleKeyDown} />
                 </div>
                 {/* <div className="buttonBox"> */}
                 <button className="button" onClick={onSearch}>Search</button>
